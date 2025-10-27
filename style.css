@@ -1,0 +1,81 @@
+/* reset */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* body background image */
+html, body { height: 100%; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  background: center/cover no-repeat url('rabbit.jpeg');
+  filter: grayscale(100%);
+  position: relative;
+  height: 100vh;
+  color: #fff;
+  overflow: hidden;
+}
+
+/* subtle dark overlay so text is readable */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.35); /* adjust for contrast */
+}
+
+/* content positioning */
+.content {
+  position: absolute;
+  top: 8%;
+  left: 6%;
+  z-index: 2;
+  max-width: 70%;
+}
+
+/* heading */
+.content h1 {
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 300;
+  line-height: 1.05;
+  margin-bottom: 0.5rem;
+}
+.sub { display: block; font-weight: 400; margin-top: 0.25rem; }
+
+/* caption */
+.caption {
+  margin-top: 0.6rem;
+  color: rgba(255,255,255,0.9);
+  font-size: 1rem;
+  opacity: 0.95;
+}
+
+/* Memories button */
+.memory-button {
+  display: inline-block;
+  margin-top: 1.2rem;
+  padding: 12px 30px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.45);
+  background: rgba(0,0,0,0.2);
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: transform .18s ease, background .18s ease;
+}
+.memory-button:hover {
+  transform: translateY(-3px);
+  background: rgba(255,255,255,0.06);
+}
+
+/* footer */
+.footer {
+  position: absolute;
+  bottom: 16px;
+  left: 12px;
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.7);
+  z-index: 2;
+}
+
+/* responsive */
+@media (max-width: 700px) {
+  .content { left: 4%; top: 6%; max-width: 90%; }
+  .content h1 { font-size: 2rem; }
+}
