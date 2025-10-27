@@ -39,3 +39,12 @@ rabbit-memories/
 └── .github/
     └── workflows/
         └── deploy.yml      # GitHub Actions workflow
+
+
+
+### 🐳 DockerHub Image
+You can directly pull and run this project using Docker:
+
+```bash
+docker pull shirshaa/rabbit-memories:latest
+docker run -p 8080:80 shirshaa/rabbit-memories
