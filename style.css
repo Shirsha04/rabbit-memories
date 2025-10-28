@@ -5,7 +5,7 @@
 html, body { height: 100%; }
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-  background: center/cover no-repeat url('rabbit2.jpeg');
+  background: center/cover no-repeat url('rabbit.jpeg');
   filter: grayscale(100%);
   position: relative;
   height: 100vh;
